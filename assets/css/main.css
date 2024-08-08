@@ -1343,6 +1343,7 @@ section,
   .specials .details h3 {
     font-size: 20px;
     text-align: center;
+    margin-top: 10px;
   }
   .specials .details p {
     font-size: 12px;
