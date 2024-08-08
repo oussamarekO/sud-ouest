@@ -250,6 +250,12 @@ h6 {
   color: var(--default-color);
 }
 
+@media (max-width: 756px) {
+
+  .header .topbar {
+    display: none !important;
+  }
+}
 @media (max-width: 575px) {
 
   .header .topbar .contact-info i a,
@@ -751,6 +757,15 @@ h6 {
   margin-top: 6px;
   font-size: 13px;
 }
+@media screen and (max-width: 756px) {
+  .footer .copyright p {
+    font-size: 10px;
+  }
+  .footer .footer-top div {
+    justify-content: center !important;
+    text-align: center;
+  }
+}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -934,6 +949,14 @@ section,
   font-weight: 600;
   font-family: var(--heading-font);
 }
+@media screen and (max-width: 756px) {
+  .section-title h2{
+    font-size: 10px;
+  }
+  .section-title p {
+    font-size: 26px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -1022,6 +1045,7 @@ section,
   }
 
   .hero p {
+    display: none;
     font-size: 18px;
   }
 }
@@ -1030,7 +1054,8 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  /* background: url("../img/about-bg.jpg") center center; */
+  background: url("../img/boucherieHalal.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -1080,15 +1105,25 @@ section,
   margin-bottom: 0;
 }
 
-.about .about-img {
+.about-img {
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 80%);
   transition: 0.3s;
 }
 
-.about .about-img:hover {
+.about-img:hover {
   transform: scale(1.03);
 }
-
+@media screen and (max-width: 756px) {
+  .about .content h3 {
+    font-size: 14px;
+  }
+  .about .content, 
+  .about .content p:last-child, 
+  .about .content ul span {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 /*--------------------------------------------------------------
 # Why Us Section
 --------------------------------------------------------------*/
@@ -1134,6 +1169,15 @@ section,
 .why-us .card-item:hover h4 a,
 .why-us .card-item:hover p {
   color: var(--contrast-color);
+}
+@media screen and (max-width: 756px) {
+  .why-us .card-item h4 {
+    font-size: 20px;
+  }
+  .why-us .card-item p {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1291,9 +1335,20 @@ section,
   }
 
   .specials .nav-link.active {
-    color: var(--accent-color);
+    color: var(--contrast-color);
     background: var(--accent-color);
   }
+}
+@media screen  and (max-width: 756px) {
+  .specials .details h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .specials .details p {
+    font-size: 12px;
+    text-align: center;
+  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1686,6 +1741,16 @@ section,
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+}
+@media screen and (max-width: 756px) {
+  .contact .info-item h3 {
+    font-size: 14px;
+  }
+  
+  .contact .info-item p, 
+  .contact .info-item a {
+    font-size: 12px;
+  }
 }
 
 .contact .php-email-form {
